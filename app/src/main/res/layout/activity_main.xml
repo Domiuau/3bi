@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/cinzameioazulado">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/fundocima"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/fundocima"
+            android:backgroundTint="@color/cinzameioazulado"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="40dp"
+            android:paddingTop="20dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="20dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/data"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/data"
+                android:hint="Data:" />
+
+            <TextView
+                android:id="@+id/anterior"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:background="@drawable/data"
+                android:backgroundTint="@color/rosaouroxonaosei" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/buscar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:background="@drawable/data"
+                android:backgroundTint="@color/rosaouroxonaosei"
+                android:src="@drawable/lupa" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/espaco1"
+                style="@style/botao"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="50dp"
+                android:hint="Altura ex:1,70"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:background="@drawable/curva" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/espaco2"
+                style="@style/botao"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:hint="Peso ex:55,43"
+                android:textSize="20sp"
+                android:layout_marginRight="70dp"
+                android:layout_weight="1"
+                android:background="@drawable/curva" />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Gravar"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/graavar"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/curva"
+                    android:src="@drawable/gravar" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/resualtado"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:hint="seu IMC"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:background="@drawable/rosa"
+
+
+                />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Comparar"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:id="@+id/comparar"
+                    android:background="@drawable/curva"
+                    android:backgroundTint="@color/laranjapalido"
+                    android:src="@drawable/comparar" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/n7"
+                        style="@style/botao"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/curva"
+                        android:text="7" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        style="@style/botao"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/n8"
+                        android:background="@drawable/curva"
+                        android:text="8" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        style="@style/botao"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/n9"
+                        android:background="@drawable/curva"
+                        android:text="9" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        style="@style/botao"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/curva"
+                        android:id="@+id/n4"
+                        android:text="4" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        style="@style/botao"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/curva"
+                        android:id="@+id/n5"
+                        android:text="5" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        style="@style/botao"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/curva"
+                        android:id="@+id/n6"
+                        android:text="6" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        style="@style/botao"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/n1"
+                        android:background="@drawable/curva"
+                        android:text="1" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        style="@style/botao"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/curva"
+                        android:id="@+id/n2"
+                        android:text="2" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        style="@style/botao"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/n3"
+                        android:layout_weight="1"
+                        android:background="@drawable/curva"
+                        android:text="3" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        style="@style/botao"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:id="@+id/n0"
+                        android:background="@drawable/curva"
+                        android:text="0" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        style="@style/botao"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/virgula"
+                        android:background="@drawable/curva"
+                        android:backgroundTint="@color/rosaouroxonaosei"
+                        android:text="," />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/botao"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/nc"
+                    android:background="@drawable/curva"
+                    android:backgroundTint="@color/laranjapalido"
+                    android:text="C" />
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    style="@style/botao"
+                    android:src="@drawable/back"
+                    android:scaleType="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/nback"
+                    android:background="@drawable/curva" />
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/botao"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/igual"
+                    android:layout_weight="2"
+                    android:background="@drawable/curva"
+                    android:backgroundTint="@color/azulclaro"
+                    android:text="=" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
